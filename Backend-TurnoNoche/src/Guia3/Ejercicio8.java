@@ -28,14 +28,10 @@ public class Ejercicio8 {
                 System.out.print("  ");
             }else{
             System.out.print("x");
-            }
-                    else {
-            System.out.print("x");
+                    }
                 }
                 System.out.println(" ");
         }
     }
         }
-
-    }
 }

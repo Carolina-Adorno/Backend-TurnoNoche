@@ -21,23 +21,26 @@ Al finalizar el proceso, se imprime un informe indicando la cantidad de lecturas
  * @author alvar
  */
 public class Ejercicio7 {
-    public static void main(String[] args) {
+  public static void main(String[] args) {
         Scanner leer=new Scanner(System.in);
         int cuentaCorrecta=0, cuentaIncorrecta=0;
        String frase;
+       
         do{
             System.out.println("Ingrese una frase que comience con X y termine con O");
-            frase=leer.nextLine();
+            frase = leer.nextLine();
             if(frase.equals("&&&&&")){
-                break:
+                break;
             }
-            if(frase.lenght() == 5 && (frase.substring(0,1)).equals("X") && (frase.substring(4,5)).equals("O")){
+           if (frase.lenght() == 5 && (frase.substring(0,1)).equals("X") && (frase.substring(4,5)).equals("O")){
             cuentaCorrecta++;
         }
             else
             {
                 cuentaIncorrecta++;
-            }       
-       }
+            } 
+        }while(true);
+            System.out.println("Lecturas correctas: " + cuentaCorrecta);
+            System.out.println("Lecturas incorrectas " + cuentaIncorrecta);
         }
-}
+        }
