@@ -22,6 +22,7 @@ public class Ejercicio11Guia {
         System.out.println("Ingrese una palabra o frase");
         Scanner leer = new Scanner(System.in);
         String frase = leer.nextLine();
+       
         System.out.println(reemplazo(frase));
 
     }
@@ -29,15 +30,17 @@ public class Ejercicio11Guia {
     public static String reemplazo(String frase) {
         String letra = "";
         String letraFinal = "";
+      
         for (int i = 0; i < frase.length(); i++) {
             letra = frase.substring(i, i + 1);
+            
             switch (letra) {
                 case "a":
                     letraFinal = letraFinal + "@";
                   
                     break;
                 case "e":
-                    letraFinal = letraFinal + ("#");
+                    letraFinal = letraFinal + "#";
                     break;
                 case "i":
                     letraFinal = letraFinal.concat("$");

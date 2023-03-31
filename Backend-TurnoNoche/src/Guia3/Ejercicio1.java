@@ -5,6 +5,8 @@
  */
 package Guia3;
 
+import java.util.Scanner;
+
 /**Crear un programa que dado un
  * número determine si es par o impar.
  *
@@ -12,11 +14,17 @@ package Guia3;
  */
 public class Ejercicio1 {
     public static void main(String[] args) {
-        int num;  
-        System.out.println("Ingrese un número y se dirá si es par o impar");
+        
+    System.out.println("Ingrese un número y se dirá si es par o impar");
+        Scanner leer = new Scanner(System.in);
+        int num = leer.nextInt();
+        
+        if(num % 2 == 0){
+            System.out.println("El número es par");
+        }else {
+            System.out.println("El número es impar");
+        } 
     }
   
-   
-    
    
 }
