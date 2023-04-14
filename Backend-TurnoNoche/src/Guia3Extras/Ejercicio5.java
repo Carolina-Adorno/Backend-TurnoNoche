@@ -12,6 +12,55 @@ del tratamiento (previo al descuento) y determine el importe en efectivo a pagar
 
 public class Ejercicio5 {
     public static void main(String[] args) {
+        System.out.println("Ingrese el tipo de socio");
+        Scanner leer = new Scanner(System.in);
+        char tipoSocio;
+        do 
+            tipoSocio
         
+     
+        switch(tipoSocio){
+            case "A":
+
+                break;
+            case "B":
+                
+                break;
+            case "C":
+                break;
+                
+       char caracter;
+        
+        Scanner leer = new Scanner(System.in);
+        System.out.println("¿Que tipo de socios sos?");
+        System.out.println("Ingrese una opcion");
+        System.out.println("Socio A");
+        System.out.println("Socio B");
+        System.out.println("Socio C");
+        
+        caracter= (char)System.in.read();
+        
+        int descuento,tratamiento,cuotA=1500,cuotB=1000,cuotC=500;
+        
+        if(!"A".equals(caracter)){
+            System.out.println("¿Cual es el costo del tratamiento?");
+            tratamiento= leer.nextInt();
+            descuento=tratamiento-(tratamiento*50)/100;
+            System.out.println("El importa a pagar en dicho mes es de $"+(cuotA+descuento));
+        } else
+            if(!"B".equals(caracter)){
+                System.out.println("¿Cual es el costo del tratamiento?");
+                tratamiento= leer.nextInt();
+                descuento=tratamiento-(tratamiento*35)/100;
+                System.out.println("El importa a pagar en dicho mes es de $"+(cuotB+descuento));
+        }
+          else
+            if(!"C".equals(caracter)){
+            System.out.println("El importa a pagar en dicho mes es de $"+(cuotC)); 
+            }         
+    }
+}
+                
+        }
     }
 }

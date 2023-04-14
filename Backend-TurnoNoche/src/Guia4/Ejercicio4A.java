@@ -30,4 +30,21 @@ public class Ejercicio4A {
     } return contador <= 2;
     }
     }
-           
+
+
+
+/* NICOOOOO!!!!!!!!!!!!!!!!!!!!!!!!
+LA CARPETA Q TENES
+CLICK DERECHO
+GIT BASH HERE
+SE ABRE GIT BASH HERE
+ENTRA LOS COMANDOS
+git status
+git add .
+git commit -m "un mensaje x"
+git push origin main
+git status
+estos son los comandos q siempre usas para actualizar el git
+despues vas a github y tienen q salir
+*/
+     
